@@ -60,7 +60,7 @@ Many programming languages provide regular expression capabilities, some built-i
 
  :exclamation: **PATTERN**
 
-Each character in a regular expression is either understood to be a **metacharacter** with its special meaning, or a regular character with its literal meaning. Together, they can be used to identify textual material of a given pattern, or process a number of instances of it that can vary from a precise equality to a very general similarity of the pattern.
+Each character in a regular expression is either understood to be a **metacharacter** with its special meaning, or a **regular character** with its literal meaning. Together, they can be used to identify textual material of a given pattern, or process a number of instances of it that can vary from a precise equality to a very general similarity of the pattern.
 
 ### Basic concepts
 
@@ -119,6 +119,7 @@ Escaping of special characters is done by backslash, eg. “\(in bracket\)”.
 **JavaScript**
 
 Ref: http://www.w3schools.com/js/js_regexp.asp
+
 In JavaScript, regular expressions are also objects. These patterns are used with the exec and test methods of RegExp, and with the **match**, **replace**, **search**, and **split** methods of String.
 ```javascript
 var str = "Visit W3Schools";
@@ -131,5 +132,67 @@ var n = str.search(/w3schools/i);
 Ref: http://freemarker.org/docs/ref_builtins_string.html
 Uses java regular expressions - http://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html
 
+Method: **matches**
 
-To be continued...
+http://freemarker.org/docs/ref_builtins_string.html#ref_builtin_matches
+
+```
+<#if "foo bar fyo"?matches("f.?o")>
+    <#-- it matches! -->
+</#if>
+```
+
+If the regular expression contains groups (parentheses), then you can access them with the groups built-in:
+
+```
+<#-- Entire input match -->
+<#assign res = "Juraj Husar"?matches(r"(\w+) (\w+)")>
+<#if res> <#-- We can't try to access groups if there was no match! -->
+  First name: ${res?groups[1]}
+  Second name: ${res?groups[2]}
+</#if>
+```
+
+Method: **replace** - should also allow regex support
+
+we need to specify third parameter to allow regex replacing
+
+http://freemarker.org/docs/ref_builtins_string.html#ref_builtin_string_flags
+
+```
+${someText?replace('ba*', 'XY', 'ri')}
+```
+
+## More References
+
+Wiki Regex
+- https://en.wikipedia.org/wiki/Regular_expression
+
+JavaScript
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
+Tester - php, javaScript, python
+- https://regex101.com
+- http://regexr.com/
+
+## Lessons
+
+Now let's try write some regular expressions!
+
+### Lesson 1 - Warming up!
+
+If you want, you can use https://regex101.com/ for testing.
+
+// sub-lessons //
+
+### Lesson 2 - JavaScript in regex wild.
+
+// write here //
+
+### Lesson 3 - Now we are experts! Let’s try some challenges.
+
+Now we can play a little - [ link ]
+
+Tell me your final score! :)
+
+Another interesting "game": http://regexcrossword.com/
