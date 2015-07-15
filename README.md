@@ -192,7 +192,24 @@ If you want, you can use https://regex101.com/ for testing.
 
 ### Lesson 2 - JavaScript in regex wild.
 
-// write here //
+The purpose of this task is to supplement the code several functions (you can find them in a file lesson2/script.js).
+Your job is to fill the missing regular expressions (in the shortest possible form) so that the following conditions are met:
+
+1. **verifyNumber** function checks if introduced from two to five digits.
+
+2. **verifyZipCode** function checks if the code entered is the embodiment of-ccc (with-any lowercase or uppercase letter, c-digit).
+
+3. **verifyImageName** function checks if the file name is entered nazwa.rozszerzenie form.
+(Name may contain only small, large letters, digits, and _ and the possible extension png or jpg).
+
+4. **verifyName** function checks whether the user has correctly learned the name and (optional!) Name.
+The name should begin with the letters on or Ma, followed by a maximum of five lowercase letters.
+Name should begin with a capital letter and contain up to 9 letters.
+First and last name separated by a single space (unless the user specifies the name).
+
+5. **verifyPassword** function checks whether the user has entered the password correctly. The password should contain at least one lowercase letter, at least one uppercase letter
+and at least one number. The password should be at least five characters (allowed characters are: digits, uppercase and lowercase letters and @,%, $, \*)
+Note: (? =)
 
 ### Lesson 3 - Now we are experts! Let’s try some challenges.
 
