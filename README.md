@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Regex Workshop](#regex-workshop)
+  - [Introduction](#introduction)
+    - [Definitions of regular expressions](#definitions-of-regular-expressions)
+    - [Basic concepts](#basic-concepts)
+  - [In reality - programming languages!](#in-reality---programming-languages)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Regex Workshop
 Regular expressions workshop
 

@@ -1,0 +1,25 @@
+{
+  "name": "jurosh-regex-workshop",
+  "version": "1.0.0",
+  "description": "Regular expression workshop.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jurosh/regex-workshop.git"
+  },
+  "keywords": [
+    "regex",
+    "resular",
+    "expressions",
+    "pattern"
+  ],
+  "author": "Juraj Husar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jurosh/regex-workshop/issues"
+  },
+  "homepage": "https://github.com/jurosh/regex-workshop"
+}
