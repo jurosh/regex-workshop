@@ -7,6 +7,11 @@
     - [Definitions of regular expressions](#definitions-of-regular-expressions)
     - [Basic concepts](#basic-concepts)
   - [In reality - programming languages!](#in-reality---programming-languages)
+  - [More References](#more-references)
+  - [Lessons](#lessons)
+    - [Lesson 1 - Warming up!](#lesson-1---warming-up)
+    - [Lesson 2 - JavaScript in regex wild.](#lesson-2---javascript-in-regex-wild)
+    - [Lesson 3 - Now we are experts! Let’s try some challenges.](#lesson-3---now-we-are-experts-let%E2%80%99s-try-some-challenges)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
