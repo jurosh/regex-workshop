@@ -190,7 +190,7 @@ If you want, you can use https://regex101.com/ for testing.
 
 // sub-lessons //
 
-### Lesson 2 - JavaScript in regex wild.
+### Lesson 2 - Regex in javascript JavaScript wild.
 
 The purpose of this task is to supplement the code several functions (you can find them in a file lesson2/script.js).
 Your job is to fill the missing regular expressions (in the shortest possible form) so that the following conditions are met:
@@ -210,10 +210,27 @@ and at least one number. The password should be at least five characters (allowe
 
 5. **doMath** function is mathematical example. We have two numbers and sign which determine mathematical operation. Example `1 + 3`, `77 / 11` etc. Function should return result (eg. sum of 2 number). This should be helpfull http://www.w3schools.com/jsref/jsref_obj_regexp.asp.
 
+6. **doRearangement** function is special function which gets Adress from input text and format it like `State, City Zip`. Input is `Name [Surname], State, Zip City`. Name and City is composed from letters and Zip is number. In this example there is no need to handle extreme cases.<br>
+Example input: `Alexander, 15 Bratislava, Slovakia`<br>
+Example output: `Slovakia, Bratislava, 15`<br>
+*Hint: $1*
+
+7. **stripHtmlTags** function should strip HTML tags and return only plain text. For example for input `<a href="#">TEXT</a>` should be returned only `TEXT`. If you remove all tags like `<item>`, `</item>`, `<item />`, you should match all test cases.<br>
+*Hint: modifiers*
+
 ### Lesson 3 - Now we are experts! Let’s try some challenges.
 
-Now we can play a little - [ link ]
+Now we can play a little. :sunglasses:
+Open http://regex.alf.nu/ and start game!
 
-Tell me your final score! :)
+Some levels are really hardcore, so don't be shy and skip some of them. But try to do as many as you can.
 
-Another interesting "game": http://regexcrossword.com/
+**Tell me your final score!** :)
+
+Another interesting regular expresions "game" is http://regexcrossword.com/.
+
+If you don't have anough then try http://regexone.com/.
+
+And don't remember to finish academy https://www.codecademy.com/courses/javascript-intermediate-en-NJ7Lr/0/1.
+
+*That's all folks.*

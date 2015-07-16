@@ -5,7 +5,6 @@
   'use strict';
 
   // verifyNumber function test
-  /*
   [
     { input: 1212, output: true},
     { input: 99999, output: true},
@@ -94,7 +93,6 @@
         'Password `%code` verification'.replace('%code', testObject.input));
     });
   });
-  */
 
   // doMath function test
   [
@@ -103,11 +101,38 @@
     { input: '2 * 3', output: 6 },
     { input: '1-2', output: -1 },
     { input: '1 + 1 =', output: 2 },
+    { input: '1 1', output: false },
+    { input: '1 ** 2', output: false },
     { input: {}, output: false },
   ].forEach(function(testObject) {
     QUnit.test('doMath', function () {
       QUnit.strictEqual(doMath(testObject.input), testObject.output,
-        'Result of `%input` is not correct'.replace('%input', testObject.input));
+        'Testing of input `%input`'.replace('%input', testObject.input));
+    });
+  });
+
+  // doReplacements function test
+  [
+    { input: 'Juraj Husar, 12345 Kosice, Slovakia', output: 'Slovakia, Kosice, 12345' },
+    { input: 'Mariana, 1001 Bratislava, Slovakia', output: 'Slovakia, Bratislava, 1001' },
+    { input: 'Juraj Janosik, 1223 Horna Dolna, Slovakia', output: 'Slovakia, Horna Dolna, 1223' },
+    { input: 'Vuloic, 31564 Spisska nova Ves, Slovakia', output: 'Slovakia, Spisska nova Ves, 31564' },
+  ].forEach(function(testObject) {
+    QUnit.test('doRearangement', function () {
+      QUnit.strictEqual(doRearangement(testObject.input), testObject.output,
+        'Test of text rearangement of input `%input`'.replace('%input', testObject.input));
+    });
+  });
+
+  // simpleStripHtmlTags function test
+  [
+    { input: '<a href="http://www.performgroup.co.uk/">PerformGroup</a>', output: 'PerformGroup' },
+    { input: '<span data-test="" /><a href="http://www.performgroup.co.uk/">Perform</a>', output: 'Perform' },
+    { input: '<span>Hey!</span> <a href="http://www.performgroup.co.uk/">Perform!</a>', output: 'Hey! Perform!' },
+  ].forEach(function(testObject) {
+    QUnit.test('stripHtmlTags', function () {
+      QUnit.strictEqual(stripHtmlTags(testObject.input), testObject.output,
+        'Test if input `%input` contains HTML tags.'.replace('%input', testObject.input));
     });
   });
 
