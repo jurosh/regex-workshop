@@ -195,21 +195,20 @@ If you want, you can use https://regex101.com/ for testing.
 The purpose of this task is to supplement the code several functions (you can find them in a file lesson2/script.js).
 Your job is to fill the missing regular expressions (in the shortest possible form) so that the following conditions are met:
 
-1. **verifyNumber** function checks if introduced from two to five digits.
+1. **verifyNumber** function checks if input is number from two to five digits.
 
-2. **verifyZipCode** function checks if the code entered is the embodiment of-ccc (with-any lowercase or uppercase letter, c-digit).
-
-3. **verifyImageName** function checks if the file name is entered nazwa.rozszerzenie form.
+3. **verifyImageName** function checks if the file name is entered in correct form.
 (Name may contain only small, large letters, digits, and _ and the possible extension png or jpg).
 
-4. **verifyName** function checks whether the user has correctly learned the name and (optional!) Name.
-The name should begin with the letters on or Ma, followed by a maximum of five lowercase letters.
-Name should begin with a capital letter and contain up to 9 letters.
-First and last name separated by a single space (unless the user specifies the name).
+4. **verifyName** function checks whether the user has correctly entered specific names and (optional!) surname. The name should begin with the `Ju` or `Ma` letters, followed by a maximum of five lowercase letters. Optional surname should begin with a capital letter and contain up to 9 letters.
+First and last name separated by a single space (unless the user specifies surname).
+Eg. `Juraj Milanovic`, or `Martin`.
 
 5. **verifyPassword** function checks whether the user has entered the password correctly. The password should contain at least one lowercase letter, at least one uppercase letter
-and at least one number. The password should be at least five characters (allowed characters are: digits, uppercase and lowercase letters and @,%, $, \*)
-Note: (? =)
+and at least one number. The password should be at least five characters (allowed characters are: `digits`, `uppercase` and `lowercase` letters and `@`, `%`, `$`, `*`)<br>
+*Hint: positive lookahead*
+
+5. **doMath** function is mathematical example. We have two numbers and sign which determine mathematical operation. Example `1 + 3`, `77 / 11` etc. Function should return result (eg. sum of 2 number). This should be helpfull http://www.w3schools.com/jsref/jsref_obj_regexp.asp.
 
 ### Lesson 3 - Now we are experts! Let’s try some challenges.
 

@@ -5,9 +5,10 @@
   'use strict';
 
   // verifyNumber function test
+  /*
   [
     { input: 1212, output: true},
-    { input: 11111, output: true},
+    { input: 99999, output: true},
     { input: 565, output: true},
     { input: 50, output: true},
     { input: 12345, output: true},
@@ -20,31 +21,7 @@
   ].forEach(function(testObject) {
     QUnit.test('verifyNumber', function () {
       QUnit.strictEqual(verifyNumber(testObject.input), testObject.output,
-        'Verify functionality for number %number'.replace('%number', testObject.input));
-    });
-  });
-
-  // verifyZipCode function test
-  [
-    { input: 's-000', output: true},
-    { input: 'o-324', output: true},
-    { input: 'A-091', output: true},
-    { input: 'X-460', output: true},
-    { input: 'o-000', output: true},
-    { input: 'X-234', output: true},
-    { input: 'as-453', output: false},
-    { input: '324', output: false},
-    { input: 'a-Sdf', output: false},
-    { input: 'B - 321', output: false},
-    { input: 'a-2125', output: false},
-    { input: '-2125', output: false},
-    { input: '_5135', output: false},
-    { input: 3, output: false},
-    { input: {}, output: false}
-  ].forEach(function(testObject) {
-    QUnit.test('verifyZipCode', function () {
-      QUnit.strictEqual(verifyZipCode(testObject.input), testObject.output,
-        'For %code test function verify zip code'.replace('%code', testObject.input));
+        'Verify function for number %number'.replace('%number', testObject.input));
     });
   });
 
@@ -57,6 +34,7 @@
     { input: '_.png', output: true},
     { input: 'bb_.png', output: true},
     { input: ' gtu.jpg', output: false},
+    { input: '.jpg', output: false},
     { input: '324fgjpg', output: false},
     { input: 'aS.gif', output: false},
     { input: 'my image.jpg', output: false},
@@ -68,31 +46,27 @@
   ].forEach(function(testObject) {
     QUnit.test('verifyImageName', function () {
       QUnit.strictEqual(verifyImageName(testObject.input), testObject.output,
-        'For %code function verifyImageName works correctly'.replace('%code', testObject.input));
+        'Function verifyImageName for input %code'.replace('%code', testObject.input));
     });
   });
 
   // verifyName function test
   [
-    { input: 'Natalia', output: true},
-    { input: 'Nata Dijdr', output: true},
-    { input: 'Mateo Guisfe', output: true},
-    { input: 'Naaaaaa Kiserduje', output: true},
-    { input: 'Naaaaaa K', output: true},
-    { input: 'Naa Kgsh', output: true},
-    { input: 'Natalia ', output: false},
-    { input: 'natalia', output: false},
-    { input: 'Natalia Gaaaaaaaaaa', output: false},
-    { input: 'Natalia_Ghysi', output: false},
-    { input: 'aMate', output: false},
-    { input: 'MaTeo', output: false},
-    { input: 'Mateo gtra', output: false},
-    { input: 'Natr Dkshi ', output: false},
+    { input: 'Juraj', output: true},
+    { input: 'Juraj Furik', output: true},
+    { input: 'Martin Pran', output: true},
+    { input: 'Martin Prankovic', output: true},
+    { input: 'Jurajiac', output: false},
+    { input: 'Jurajiac Feritan', output: false},
+    { input: 'juraj', output: false},
+    { input: 'Juraj _And', output: false},
+    { input: 'Juraj smallChar', output: false},
+    { input: 'Juraj LongCharacters', output: false},
     { input: {}, output: false}
   ].forEach(function(testObject) {
     QUnit.test('verifyName', function () {
       QUnit.strictEqual(verifyName(testObject.input), testObject.output,
-        'For %code function verifyName works correctly'.replace('%code', testObject.input));
+        'Test name `%code`'.replace('%code', testObject.input));
     });
   });
 
@@ -117,7 +91,23 @@
   ].forEach(function(testObject) {
     QUnit.test('verifyPassword', function () {
       QUnit.strictEqual(verifyPassword(testObject.input), testObject.output,
-        'For %code function verifyPassword works correctly'.replace('%code', testObject.input));
+        'Password `%code` verification'.replace('%code', testObject.input));
+    });
+  });
+  */
+
+  // doMath function test
+  [
+    { input: '1 + 3', output: 4 },
+    { input: '8 / 2', output: 4 },
+    { input: '2 * 3', output: 6 },
+    { input: '1-2', output: -1 },
+    { input: '1 + 1 =', output: 2 },
+    { input: {}, output: false },
+  ].forEach(function(testObject) {
+    QUnit.test('doMath', function () {
+      QUnit.strictEqual(doMath(testObject.input), testObject.output,
+        'Result of `%input` is not correct'.replace('%input', testObject.input));
     });
   });
 
