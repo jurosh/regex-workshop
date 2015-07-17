@@ -1,6 +1,7 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+**Table of Contents**
 
 - [Regex Workshop](#regex-workshop)
   - [Introduction](#introduction)
@@ -10,13 +11,15 @@
   - [More References](#more-references)
   - [Lessons](#lessons)
     - [Lesson 1 - Warming up!](#lesson-1---warming-up)
-    - [Lesson 2 - JavaScript in regex wild.](#lesson-2---javascript-in-regex-wild)
+    - [Lesson 2 - Regex in javascript JavaScript wild.](#lesson-2---regex-in-javascript-javascript-wild)
     - [Lesson 3 - Now we are experts! Let’s try some challenges.](#lesson-3---now-we-are-experts-let%E2%80%99s-try-some-challenges)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Regex Workshop
-Regular expressions workshop
+Let's start Regular expressions workshop!
+
+**Requirements:** Git client, Browser, Editor (with JavaScript support) and your courage.
 
 ## Introduction
 
@@ -50,7 +53,7 @@ Quite a few people have some sort of a rough idea what regular expressions do, w
 - form field data validation (either on the client with JavaScript or Flash/Flex or on pretty much any backend from CF via PHP to Java or Ruby)
 - text pattern recognition
 - URL rewrite rules with Apache or IIS
-- powerful replace feature in you text editor
+- powerful replace feature in you text editors
 - and many more.
 
 ### Definitions of regular expressions
@@ -176,7 +179,7 @@ Wiki Regex
 JavaScript
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
-Tester - php, javaScript, python
+Regex Tester
 - https://regex101.com
 - http://regexr.com/
 
@@ -186,19 +189,20 @@ Now let's try write some regular expressions!
 
 ### Lesson 1 - Warming up!
 
-If you want, you can use https://regex101.com/ for testing.
+If you want, you can use https://regex101.com/ as helper for more detailed testing and information about your pattern.
 
-// sub-lessons //
+Open `lesson1/index.html` and finish first lesson.
 
 ### Lesson 2 - Regex in javascript JavaScript wild.
 
-The purpose of this task is to supplement the code several functions (you can find them in a file lesson2/script.js).
+The purpose of this task is to supplement the code several functions (you can find them in `lesson2/script.js`).<br>
+You can see track progress here `lesson2/index.html`.<br>
 Your job is to fill the missing regular expressions (in the shortest possible form) so that the following conditions are met:
 
-1. **verifyNumber** function checks if input is number from two to five digits.
+1. **verifyNumber** function checks if input is number from 2 up to 5 digits.
 
 3. **verifyImageName** function checks if the file name is entered in correct form.
-(Name may contain only small, large letters, digits, and _ and the possible extension png or jpg).
+(Name may contain only small, large letters, digits, and _ and the  extension `png` or `jpg`).
 
 4. **verifyName** function checks whether the user has correctly entered specific names and (optional!) surname. The name should begin with the `Ju` or `Ma` letters, followed by a maximum of five lowercase letters. Optional surname should begin with a capital letter and contain up to 9 letters.
 First and last name separated by a single space (unless the user specifies surname).
@@ -220,16 +224,16 @@ Example output: `Slovakia, Bratislava, 15`<br>
 
 ### Lesson 3 - Now we are experts! Let’s try some challenges.
 
-Now we can play a little. :sunglasses:
+We can play a little. :sunglasses:
 Open http://regex.alf.nu/ and start game!
 
 Some levels are really hardcore, so don't be shy and skip some of them. But try to do as many as you can.
 
 **Tell me your final score!** :)
 
-Another interesting regular expresions "game" is http://regexcrossword.com/.
+Another interesting regular expressions "game" is http://regexcrossword.com/.
 
-If you don't have anough then try http://regexone.com/.
+If you don't have enough then try http://regexone.com/.
 
 And don't remember to finish academy https://www.codecademy.com/courses/javascript-intermediate-en-NJ7Lr/0/1.
 
